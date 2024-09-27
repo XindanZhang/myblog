@@ -1,9 +1,11 @@
-title: "jekyll-shell-theme"
-tagline: "A jekyll theme that looks like a shell/terminal"
-description: "This is a preview of jekyll-shell-theme."
-github_username: tareqdandachi
-baseurl: "/jekyll-shell-theme"
-url: "https://tareqdandachi.github.io"
+title: "Wini"
+tagline: "Blogs like a shell/terminal"
+description: "This is Wini's blog."
+github_username: XindanZhang
+baseurl: "/myblog"
+url: "https://XindanZhang.github.io"
+
+permalink: /:year/:month/:day/:title/
 
 plugins:
   - jemoji
@@ -17,8 +19,9 @@ highlighter: rouge
 
 header_pages:
   - index.md
-  - read-me.md
+  - blog.md
   - preview.md
+
 
 # set the size of the text to 'large' or 'small', default is small
 font-size: small

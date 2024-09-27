@@ -2,7 +2,7 @@
 layout: page
 permalink: /preview
 permalink_name: /preview
-title: This is the page title
+title: Wini's enterntainment
 ---
 
 # Header 1

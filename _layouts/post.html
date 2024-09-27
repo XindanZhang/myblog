@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: default
 title:  "POSTS"
 ---
@@ -7,4 +7,38 @@ title:  "POSTS"
 
 <h1>{{ page.post-title }}</h1>
 
-{{ content }}
+{{ content }} -->
+
+---
+layout: default
+title: "POSTS"
+---
+
+{%- if page.detail_image -%}
+<img class="detail_header" src="{{ page.detail_image }}">
+{%- endif -%}
+
+<h1>{{ page.post-title | default: "Blog Posts" }}</h1>
+
+{% if page.content != "" %}
+  {{ content }}
+{% endif %}
+
+<ul class="post-list">
+  {% for post in site.posts %}
+    <li>
+      <h2>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h2>
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <span class="post-meta">{{ post.date | date: date_format }}</span>
+      {% if post.excerpt %}
+        <p class="post-excerpt">
+          {{ post.excerpt | strip_html | truncate: 160 }}
+        </p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
