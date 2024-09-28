@@ -7,6 +7,17 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700');
 @import url('syntax-highlighting.css');
 
+@import "{{ site.theme }}";
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
 :root {
 
   --main-color: white;
@@ -65,3 +76,4 @@ div.error_box { margin: 100px; text-align: center; }
 div.error_box h1 { font-size: 2em; }
 
 *::selection { background-color: var(--light-alt-color); color: black; }
+
