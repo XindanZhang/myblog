@@ -18,5 +18,5 @@ In study, I am interested in distributed machine learning. And a beginner for Ka
 
 Here are my [/blog](blog).
 
-No prior web-dev knowledge is required to use the theme to make a website, just follow the instructions in [/read-me](read-me) to set up your web page and start filling it with hackery content! You can see sone features of the theme in [/preview](preview).
+
 
