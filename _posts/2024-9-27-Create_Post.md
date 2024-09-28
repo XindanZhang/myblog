@@ -79,3 +79,21 @@ title: 'Your title'
 ```
 
 # Step 3 Upload to GitHub pages
+
+Add all the changes:
+
+```
+git add .
+```
+
+Create a new commit describing your changes:
+
+```
+git commit -m "Describe your changes here"
+```
+
+Push your changes to the GitHub repository:
+
+```
+git push origin main
+```
