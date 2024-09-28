@@ -54,7 +54,7 @@ You can put your blogs here.
 
 And create a new file named `blog.md`.
 
-```
+```javascript
 ---
 layout: page
 permalink: /blog
