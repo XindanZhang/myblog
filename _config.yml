@@ -20,8 +20,13 @@ highlighter: rouge
 header_pages:
   - index.md
   - blog.md
-  - preview.md
+  - aboutme.md
 
 
 # set the size of the text to 'large' or 'small', default is small
 font-size: small
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
