@@ -54,7 +54,7 @@ You can put your blogs here.
 
 And create a new file named `blog.md`.
 
-```
+````ß
 ---
 layout: page
 permalink: /blog
@@ -63,9 +63,9 @@ title: 'Your title'
 ---
 
 # Your title
-```
+````
 
-```
+````
 {% for post in site.posts %}
   <article>
     <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
@@ -78,7 +78,7 @@ title: 'Your title'
   </article>
 {% endfor %}
 
-```
+````
 
 # Step 3 Upload to GitHub pages
 
