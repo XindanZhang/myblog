@@ -1,0 +1,38 @@
+<div class="search-module">
+  <input 
+    type="search" 
+    id="searchInput" 
+    placeholder="Search posts..."
+    aria-label="Search blog posts"
+  >
+  <div id="searchResults" class="search-results"></div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('searchInput');
+  const searchResults = document.getElementById('searchResults');
+  
+  // Load search index
+  fetch('/search-index.json')
+    .then(response => response.json())
+    .then(index => {
+      searchInput.addEventListener('input', function() {
+        const query = this.value.toLowerCase();
+        const results = index.filter(post => 
+          post.title.toLowerCase().includes(query) || 
+          post.content.toLowerCase().includes(query)
+        );
+        
+        searchResults.innerHTML = results.map(post => `
+          <div class="search-result">
+            <a href="${post.url}">
+              <h3>${post.title}</h3>
+              ${post.excerpt ? `<p>${post.excerpt}</p>` : ''}
+            </a>
+          </div>
+        `).join('');
+      });
+    });
+});
+</script>
