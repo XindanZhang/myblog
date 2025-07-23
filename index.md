@@ -4,7 +4,10 @@ permalink: /
 permalink_name: /home
 title: Wini's blog
 
-detail_image: assets/theme_logo.svg
+header:
+  - name: Posts
+    url: /blog
+detail_image: assets/bread_logo.svg
 
 ---
 

@@ -10,11 +10,15 @@ title: About me
 - Amusement
    * Movies
    * Tv shows
-   * Music.
+   * Music
+   * Ping Pong
+   * Running & Swimming
 
 - Study
-   * Distributed machine learning. 
-   * A beginner for Kali.
+   * Network
+   * Distributed ML
+   * A beginner for Kali
+
 
 
 
