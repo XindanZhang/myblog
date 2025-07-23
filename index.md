@@ -7,7 +7,7 @@ title: Wini's blog
 header:
   - name: Posts
     url: /blog
-detail_image: assets/bread_logo.svg
+detail_image: assets/bread-icon-7891428-512.png
 
 ---
 
